@@ -51,3 +51,11 @@ Slashes
 Slumber assumes by default that all urls should end with a slash. If you do not
 want this behavior you can control it via the append_slash option which can be
 set by passing append_slash to the ``slumber.API`` kwargs.
+
+Trailing Format Identifiers
+===========================
+
+Slumber assumes by default that APIs do not require a trailing format identifier like
+``.json``. If you want this behavior you can control it via the ``append_format`` option,
+which can be set by passing ``append_format`` to the ``slumber.API`` kwargs. This will
+append the current format type to the end of each request.
